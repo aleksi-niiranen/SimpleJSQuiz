@@ -1,0 +1,17 @@
+#main {
+	width: 600px;
+	height: 255px;
+	border: 2px solid black;
+	background:url('bg.png') top left no-repeat;
+}
+
+#content {
+	float: left;
+	width: 250px;
+}
+
+#images {
+	float: right;
+	width: 350px;
+	display: none;
+}

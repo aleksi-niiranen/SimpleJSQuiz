@@ -2,35 +2,25 @@
 <html>
 	<head>
 		<title>quiz</title>
+		<link rel="stylesheet" type="text/css" href="quiz.css"/>
 		<script type="text/javascript" src="quiz.js"></script>
-		<script type="text/javascript">
-			function loadQuiz() {
-	var xmlhttp;
-	if (window.XMLHttpRequest) {
-		xmlhttp = new XMLHttpRequest();
-		xmlhttp.onreadystatechange = function() {
-			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-				var xmlDoc = xmlhttp.responseXML;
-				var x = xmlDoc.getElementsByTagName("QUESTION");
-				document.getElementById("question").innerHTML = x[0].childNodes[0].nodeValue;
-			}
-		}
-		xmlhttp.open("GET", "questions.xml" true);
-		xmlhttp.send();
-	} else {
-		// IE6 not supported
-	}
-			}
-		</script>
 	</head>
 
 	<body>
-		
-		<h2 id="question">Kysymys</h2>
-		<a href="#" onclick="addScore(0)"><img name="option1" src="optA.png" border="0" alt="A buttoni"/></a>
-		<a href="#" onclick="addScore(1)"><img name="option2" src="optB.png" border="0" alt="B buttoni"/></a>
-		<a href="#" onclick="addScore(2)"><img name="option3" src="optC.png" border="0" alt="C buttoni"/></a>
-		<a href="#" onclick="addScore(3)"><img name="option4" src="optD.png" border="0" alt="D buttoni"/></a>
-		<button type="button" onclick"loadQuiz()">Load Quiz</button>
+		<div id="main">
+		<div id="content">
+			<h2 id="question">Quiz starting screen</h2>
+			<p id="startText">Press <a href="#" onclick="loadQuiz('questions.xml')">here</a> to start</p>
+		</div>
+			<div id="images">
+				<!-- images here in 2 by 2 grid, 
+				float right -->
+				<table><tr>
+						<td><a href="#" onclick="addScore(0)"><img name="option1" src="" border="0" alt="A buttoni"/></a></td>
+						<td><a href="#" onclick="addScore(1)"><img name="option2" src="" border="0" alt="B buttoni"/></a></td></tr>
+					<tr><td><a href="#" onclick="addScore(2)"><img name="option3" src="" border="0" alt="C buttoni"/></a></td>
+						<td><a href="#" onclick="addScore(3)"><img name="option4" src="" border="0" alt="D buttoni"/></a></td></tr></table>
+			</div>
+	</div>
 	</body>
 </html>
