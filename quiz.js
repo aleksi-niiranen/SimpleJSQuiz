@@ -1,5 +1,6 @@
 var score = 0;
 var question = 0;
+var questionsCount;
 var xmlDoc;
 var questionDocumentElement;
 
@@ -20,6 +21,7 @@ function loadQuiz(url) {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 				xmlDoc = xmlhttp.responseXML;
 				questionDocumentElement = xmlDoc.documentElement.getElementsByTagName("QUESTION");
+				questionsCount = questionDocumentElement.length;
 				// load first question
 				renderContent();
 			}
@@ -32,7 +34,7 @@ function loadQuiz(url) {
 }
 
 function nextQuestion() {
-	if (question < 5) {
+	if (question < questionsCount) {
 		renderContent();
 	} else {
 		// todo: show results
