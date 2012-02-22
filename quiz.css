@@ -1,17 +1,33 @@
-#main {
+body {
+	font-family: verdana;
+}
+
+div#main {
 	width: 600px;
 	height: 255px;
-	border: 2px solid black;
 	background:url('bg.png') top left no-repeat;
+	padding: 2px;
 }
 
-#content {
+div#content {
 	float: left;
-	width: 250px;
 }
 
-#images {
-	float: right;
-	width: 350px;
+div#images {
 	display: none;
+	position: absolute;
+	left: 350px;
+}
+
+div#startProduct {
+	float: right;
+	margin-left: 20px;
+}
+
+div#startService {
+	float: left;
+}
+
+p.icons {
+	margin-left: 50px;
 }

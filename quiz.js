@@ -10,7 +10,8 @@ function addScore(arg) {
 }
 
 function loadQuiz(url) {
-	document.getElementById("startText").style.display = "none";
+	document.getElementById("startService").style.display = "none";
+	document.getElementById("startProduct").style.display = "none";
 	document.getElementById("images").style.display = "block";
 	var xmlhttp;
 	if (window.XMLHttpRequest) {

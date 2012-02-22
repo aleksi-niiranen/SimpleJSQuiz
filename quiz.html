@@ -10,7 +10,18 @@
 		<div id="main">
 		<div id="content">
 			<h2 id="question">Quiz starting screen</h2>
-			<p id="startText">Press <a href="#" onclick="loadQuiz('questions.xml')">here</a> to start</p>
+			<div id="startService">
+			<p>Press <a href="#" onclick="loadQuiz('questionsForServices.xml')">here</a> to start if you offer services...</p>
+			<p class="icons"><img src="img/bar.png" border="0" alt="bar" height="60" width="60"/>
+			<img src="img/gym.png" border="0" alt="gym" height="60" width="60"/><br/>
+			<img src="img/salon.png" border="0" alt="salon" height="60" width="60"/></p>
+		</div>
+		<div id="startProduct">
+			<p>or <a href="#" onclick="loadQuiz('questionsForProducts.xml')">here</a> if you sell products.</p>
+			<p class="icons"><img src="img/milk.png" border="0" alt="bar" height="60" width="60"/>
+			<img src="img/record.png" border="0" alt="gym" height="60" width="60"/><br/>
+			<img src="img/fruit.png" border="0" alt="salon" height="60" width="60"/></p>
+		</div>
 		</div>
 			<div id="images">
 				<!-- images here in 2 by 2 grid, 
