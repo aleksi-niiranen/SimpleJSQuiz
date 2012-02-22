@@ -3,10 +3,11 @@ body {
 }
 
 div#main {
-	width: 600px;
-	height: 255px;
+	width: 520px;
+	height: 265px;
 	background:url('bg.png') top left no-repeat;
 	padding: 2px;
+	border: 1px solid black;
 }
 
 div#content {
@@ -29,5 +30,5 @@ div#startService {
 }
 
 p.icons {
-	margin-left: 50px;
+	margin-left: 20px;
 }

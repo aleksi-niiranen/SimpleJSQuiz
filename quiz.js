@@ -13,7 +13,7 @@ function addScore(arg) {
 function loadQuiz(url) {
 	document.getElementById("startService").style.display = "none";
 	document.getElementById("startProduct").style.display = "none";
-	document.getElementById("images").style.display = "block";
+	document.getElementById("images").style.display = "inline";
 	var xmlhttp;
 	if (window.XMLHttpRequest) {
 		xmlhttp = new XMLHttpRequest();
@@ -37,8 +37,6 @@ function nextQuestion() {
 	if (question < questionsCount) {
 		renderContent();
 	} else {
-		// todo: show results
-		//var content = document.getElementById("question");
 		document.getElementById("question").innerHTML = "Your score was " + score + "!";
 		document.getElementById("images").style.display = "none";
 	}
@@ -52,21 +50,41 @@ function renderContent() {
 
 	xx = questionDocumentElement[question].getElementsByTagName("OPTION_ONE");
 	try {
-		document.images["option1"].src = xx[0].firstChild.nodeValue;
+		if (xx[0].hasChildNodes()) {
+			document.images["option1"].style.display = "inline";
+			document.images["option1"].src = xx[0].firstChild.nodeValue;
+		} else {
+			document.images["option1"].style.display = "none";
+		}
 	} catch (err) { }
 
 	xx = questionDocumentElement[question].getElementsByTagName("OPTION_TWO");
 	try {
-		document.images["option2"].src = xx[0].firstChild.nodeValue;
+		if (xx[0].hasChildNodes()) {
+			document.images["option2"].style.display = "inline";
+			document.images["option2"].src = xx[0].firstChild.nodeValue;
+		} else {
+			document.images["option2"].style.display = "none";
+		}
 	} catch (err) { }
 
 	xx = questionDocumentElement[question].getElementsByTagName("OPTION_THREE");
 	try {
-		document.images["option3"].src = xx[0].firstChild.nodeValue;
+		if (xx[0].hasChildNodes()) {
+			document.images["option3"].style.display = "inline";
+			document.images["option3"].src = xx[0].firstChild.nodeValue;
+		} else {
+			document.images["option3"].style.display = "none";
+		}
 	} catch (err) { }
 
 	xx = questionDocumentElement[question].getElementsByTagName("OPTION_FOUR");
 	try {
-		document.images["option4"].src = xx[0].firstChild.nodeValue;
+		if (xx[0].hasChildNodes()) {
+			document.images["option4"].style.display = "inline";
+			document.images["option4"].src = xx[0].firstChild.nodeValue;
+		} else {
+			document.images["option4"].style.display = "none";
+		}
 	} catch (err) { }
 }
