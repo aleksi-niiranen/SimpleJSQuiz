@@ -1,39 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Questions for quiz -->
-<QUESTIONS>
-	<QUESTION>
-		<TITLE>Product Question 1</TITLE>
-		<OPTION_ONE>img/optI.png</OPTION_ONE>
-		<OPTION_TWO>img/optF.png</OPTION_TWO>
-		<OPTION_THREE>img/optC.png</OPTION_THREE>
-		<OPTION_FOUR>img/optD.png</OPTION_FOUR>
-	</QUESTION>
-	<QUESTION>
-		<TITLE>Product Question 2</TITLE>
-		<OPTION_ONE>img/optE.png</OPTION_ONE>
-		<OPTION_TWO>img/optF.png</OPTION_TWO>
-		<OPTION_THREE>img/optG.png</OPTION_THREE>
-		<OPTION_FOUR>img/optH.png</OPTION_FOUR>
-	</QUESTION>
-	<QUESTION>
-		<TITLE>Product Question 3</TITLE>
-		<OPTION_ONE>img/optI.png</OPTION_ONE>
-		<OPTION_TWO>img/optD.png</OPTION_TWO>
-		<OPTION_THREE>img/optA.png</OPTION_THREE>
-		<OPTION_FOUR>img/optF.png</OPTION_FOUR>
-	</QUESTION>
-	<QUESTION>
-		<TITLE>Product Question 4</TITLE>
-		<OPTION_ONE>img/optG.png</OPTION_ONE>
-		<OPTION_TWO>img/optC.png</OPTION_TWO>
-		<OPTION_THREE>img/optH.png</OPTION_THREE>
-		<OPTION_FOUR>img/optA.png</OPTION_FOUR>
-	</QUESTION>
-	<QUESTION>
-		<TITLE>Product Question 5</TITLE>
-		<OPTION_ONE>img/optI.png</OPTION_ONE>
-		<OPTION_TWO>img/optB.png</OPTION_TWO>
-		<OPTION_THREE>img/optC.png</OPTION_THREE>
-		<OPTION_FOUR>img/optD.png</OPTION_FOUR>
-	</QUESTION>
-</QUESTIONS>
+<questions>
+	<question>
+		<title>Product question 1</title>
+		<option_one>
+			<img>img/optI.png</img>
+			<value>4</value>
+		</option_one>
+		<option_two>
+			<img>img/optF.png</img>
+			<value>0</value>
+		</option_two>
+		<option_three>
+			<img>img/optC.png</img>
+			<value>1</value>
+		</option_three>
+		<option_four>
+			<img>img/optD.png</img>
+			<value>2</value>
+		</option_four>
+	</question>
+	<question>
+		<title>Product question 2</title>
+		<option_one>
+			<img>img/optA.png</img>
+			<value>1</value>
+		</option_one>
+		<option_two>
+			<img>img/optF.png</img>
+			<value>1</value>
+		</option_two>
+		<option_three>
+			<img>img/optG.png</img>
+			<value>1</value>
+		</option_three>
+		<option_four>
+			<img>img/optH.png</img>
+			<value>1</value>
+		</option_four>
+	</question>
+	<question>
+		<title>Product question 3</title>
+		<option_one>
+			<img>img/optB.png</img>
+			<value>0</value>
+		</option_one>
+		<option_two>
+			<img>img/optF.png</img>
+			<value>3</value>
+		</option_two>
+		<option_three>
+			<img></img>
+			<value></value>
+		</option_three>
+		<option_four>
+			<img></img>
+			<value></value>
+		</option_four>
+	</question>
+	<question>
+		<title>Product question 4</title>
+		<option_one>
+			<img>img/optB.png</img>
+			<value>0</value>
+		</option_one>
+		<option_two>
+			<img>img/optF.png</img>
+			<value>3</value>
+		</option_two>
+		<option_three>
+			<img>img/optG.png</img>
+			<value>1</value>
+		</option_three>
+		<option_four>
+			<img>img/optC.png</img>
+			<value>0</value>
+		</option_four>
+	</question>
+</questions>

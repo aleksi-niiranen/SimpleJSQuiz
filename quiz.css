@@ -15,7 +15,6 @@ div#content {
 }
 
 div#images {
-	display: none;
 	position: absolute;
 	left: 350px;
 }
@@ -31,4 +30,8 @@ div#startService {
 
 p.icons {
 	margin-left: 20px;
+}
+
+.hidden {
+	display: none;
 }

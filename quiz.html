@@ -3,7 +3,6 @@
 	<head>
 		<title>quiz</title>
 		<link rel="stylesheet" type="text/css" href="quiz.css"/>
-		<script type="text/javascript" src="quiz.js"></script>
 	</head>
 
 	<body>
@@ -11,27 +10,18 @@
 		<div id="content">
 			<h2 id="question">Quiz starting screen</h2>
 			<div id="startService">
-				<p>Press <a href="#" onclick="loadQuiz('questionsForServices.xml')">here</a> to start if you<br/> offer services...</p>
+				<p>Press <a href="servicequiz.html">here</a> to start if you<br/> offer services...</p>
 			<p class="icons"><img src="img/bar.png" border="0" alt="bar" height="60" width="60"/>
 			<img src="img/gym.png" border="0" alt="gym" height="60" width="60"/><br/>
 			<img src="img/salon.png" border="0" alt="salon" height="60" width="60"/></p>
 		</div>
 		<div id="startProduct">
-			<p>or <a href="#" onclick="loadQuiz('questionsForProducts.xml')">here</a> if you sell products.</p>
+			<p>or <a href="productquiz.html">here</a> if you sell products.</p>
 			<p class="icons"><img src="img/milk.png" border="0" alt="bar" height="60" width="60"/>
 			<img src="img/record.png" border="0" alt="gym" height="60" width="60"/><br/>
 			<img src="img/fruit.png" border="0" alt="salon" height="60" width="60"/></p>
 		</div>
 		</div>
-			<div id="images">
-				<!-- images here in 2 by 2 grid, 
-				float right -->
-				<table><tr>
-						<td><a href="#" onclick="addScore(0)"><img id="A" name="option1" src="img/optA.png" border="0" alt="A buttoni"/></a></td>
-						<td><a href="#" onclick="addScore(1)"><img id="B" name="option2" src="img/optB.png" border="0" alt="B buttoni"/></a></td></tr>
-					<tr><td><a href="#" onclick="addScore(2)"><img id="C" name="option3" src="img/optC.png" border="0" alt="C buttoni"/></a></td>
-						<td><a href="#" onclick="addScore(3)"><img id="D" name="option4" src="img/optD.png" border="0" alt="D buttoni"/></a></td></tr></table>
-			</div>
-	</div>
+		</div>
 	</body>
 </html>

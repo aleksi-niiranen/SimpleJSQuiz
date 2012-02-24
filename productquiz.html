@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>product quiz</title>
+		<link rel="stylesheet" type="text/css" href="quiz.css"/>
+		<script type="text/javascript" src="quiz.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+					loadQuiz('questionsForProducts.xml');
+					renderContent();
+			});
+			function renderContent() {
+				if (question < questionsCount) {
+				var img;
+				var value;
+				var xx = questionDocumentElement[question].getElementsByTagName("title");
+				var title = xx[0].firstChild.nodeValue;
+				$("#question").html(title);
+
+				xx = questionDocumentElement[question].getElementsByTagName("option_one");
+				try {
+					img = xx[0].getElementsByTagName("img")[0].firstChild.nodeValue;
+					value = xx[0].getElementsByTagName("value")[0].firstChild.nodeValue;
+					$("#image1").removeClass("hidden");
+					$("#image1").attr("src", img);
+					$("#answer1").unbind('click');
+					$("#answer1").bind('click', { param: value }, addScore);
+				} catch (err) { $("#image1").addClass("hidden"); }
+
+				xx = questionDocumentElement[question].getElementsByTagName("option_two");
+				try {
+					img = xx[0].getElementsByTagName("img")[0].firstChild.nodeValue;
+					value = xx[0].getElementsByTagName("value")[0].firstChild.nodeValue;
+					$("#image2").removeClass("hidden");
+					$("#image2").attr("src", img);
+					$("#answer2").unbind('click');
+					$("#answer2").bind('click', { param: value }, addScore);
+				} catch (err) { $("#image2").addClass("hidden"); }
+
+				xx = questionDocumentElement[question].getElementsByTagName("option_three");
+				try {
+					img = xx[0].getElementsByTagName("img")[0].firstChild.nodeValue;
+					value = xx[0].getElementsByTagName("value")[0].firstChild.nodeValue;
+					$("#image3").removeClass("hidden");
+					$("#image3").attr("src", img);
+					$("#answer3").unbind('click');
+					$("#answer3").bind('click', { param: value }, addScore);
+				} catch (err) { $("#image3").addClass("hidden"); }
+
+				xx = questionDocumentElement[question].getElementsByTagName("option_four");
+				try {
+					img = xx[0].getElementsByTagName("img")[0].firstChild.nodeValue;
+					value = xx[0].getElementsByTagName("value")[0].firstChild.nodeValue;
+					$("#image4").removeClass("hidden");
+					$("#image4").attr("src", img);
+					$("#answer4").unbind('click');
+					$("#answer4").bind('click', { param: value }, addScore);
+				} catch (err) { $("#image4").addClass("hidden"); }
+				} else {
+					$("#images").addClass("hidden");
+					$("#answer1").unbind('click');
+					$("#answer2").unbind('click');
+					$("#answer3").unbind('click');
+					$("#answer4").unbind('click');
+					$("#question").html("Your score was " + score + "!");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<div id="content">
+			<h2 id="question">Quiz starting screen</h2>
+			</div>
+			<div id="images">
+				<table><tr>
+					<td><a id="answer1" href="#"><img id="image1" src="img/optA.png" border="0" alt="A buttoni"/></a></td>
+					<td><a id="answer2" href="#"><img id="image2" src="img/optB.png" border="0" alt="B buttoni"/></a></td></tr>
+					<tr><td><a id="answer3" href="#"><img id="image3" src="img/optC.png" border="0" alt="C buttoni"/></a></td>
+					<td><a id="answer4" href="#"><img id="image4" src="img/optD.png" border="0" alt="D buttoni"/></a></td></tr></table>
+			</div>	
+		</div>
+	</body>
+</html>
