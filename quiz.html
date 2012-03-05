@@ -1,27 +1,91 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
-		<title>quiz</title>
+		<title>service quiz</title>
 		<link rel="stylesheet" type="text/css" href="quiz.css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		
 	</head>
-
 	<body>
 		<div id="main">
-		<div id="content">
-			<h2 id="question">Quiz starting screen</h2>
-			<div id="startService">
-				<p>Press <a href="servicequiz.html">here</a> to start if you<br/> offer services...</p>
-			<p class="icons"><img src="img/bar.png" border="0" alt="bar" height="60" width="60"/>
-			<img src="img/gym.png" border="0" alt="gym" height="60" width="60"/><br/>
-			<img src="img/salon.png" border="0" alt="salon" height="60" width="60"/></p>
+			<div id="content">
+			<p id="question">Quiz starting screen</p>
+			</div>
+			<div id="answers">
+				<a id="answer1" href="#">Vastaus 1</a><br/>
+				<a id="answer2" href="#">Vastaus 2</a><br/>
+				<a id="answer3" href="#">Vastaus 3</a><br/>
+				<a id="answer4" href="#">Vastaus 4</a><br/>
+			</div>
 		</div>
-		<div id="startProduct">
-			<p>or <a href="productquiz.html">here</a> if you sell products.</p>
-			<p class="icons"><img src="img/milk.png" border="0" alt="bar" height="60" width="60"/>
-			<img src="img/record.png" border="0" alt="gym" height="60" width="60"/><br/>
-			<img src="img/fruit.png" border="0" alt="salon" height="60" width="60"/></p>
-		</div>
-		</div>
-		</div>
+<script type="text/javascript" src="quiz.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+					loadQuiz('questionsForServices.xml');
+					renderContent();
+			});
+			function renderContent() {
+				if (question < questionsCount) {
+				var answer;
+				var value;
+				var xx = questionDocumentElement[question].getElementsByTagName("title");
+				var title = xx[0].firstChild.nodeValue;
+				$("#question").html(title);
+
+				xx = questionDocumentElement[question].getElementsByTagName("option_one");
+				try {
+					answer = xx[0].getElementsByTagName("answer")[0].firstChild.nodeValue;
+					value = xx[0].getElementsByTagName("value")[0].firstChild.nodeValue;
+					$("#answer1").removeClass("hidden");
+					$("#answer1").html(answer);
+					$("#answer1").unbind('click');
+					$("#answer1").bind('click', { param: value }, addScore);
+				} catch (err) { $("#answer1").addClass("hidden"); }
+
+				xx = questionDocumentElement[question].getElementsByTagName("option_two");
+				try {
+					answer = xx[0].getElementsByTagName("answer")[0].firstChild.nodeValue;
+					value = xx[0].getElementsByTagName("value")[0].firstChild.nodeValue;
+					$("#answer2").removeClass("hidden");
+					$("#answer2").html(answer);
+					$("#answer2").unbind('click');
+					$("#answer2").bind('click', { param: value }, addScore);
+				} catch (err) { $("#answer2").addClass("hidden"); }
+
+				xx = questionDocumentElement[question].getElementsByTagName("option_three");
+				try {
+					answer = xx[0].getElementsByTagName("answer")[0].firstChild.nodeValue;
+					value = xx[0].getElementsByTagName("value")[0].firstChild.nodeValue;
+					$("#answer3").removeClass("hidden");
+					$("#answer3").html(answer);
+					$("#answer3").unbind('click');
+					$("#answer3").bind('click', { param: value }, addScore);
+				} catch (err) { $("#answer3").addClass("hidden"); }
+
+				xx = questionDocumentElement[question].getElementsByTagName("option_four");
+				try {
+					answer = xx[0].getElementsByTagName("answer")[0].firstChild.nodeValue;
+					value = xx[0].getElementsByTagName("value")[0].firstChild.nodeValue;
+					$("#answer4").removeClass("hidden");
+					$("#answer4").html(answer);
+					$("#answer4").unbind('click');
+					$("#answer4").bind('click', { param: value }, addScore);
+				} catch (err) { $("#answer4").addClass("hidden"); }
+				} else {
+					$("#answers").addClass("hidden");
+					$("#answer1").unbind('click');
+					$("#answer2").unbind('click');
+					$("#answer3").unbind('click');
+					$("#answer4").unbind('click');
+					if (score > 5)
+						$("#question").html("Surffaat teknologian aallonharjalla! Mieti kuitenkin voisivatko asiat olla vieläkin paremmin?");
+					else if (score > 2 & score <= 5)
+						$("#question").html("Hienoa, olet löytänyt verkkopalveluiden edut, mutta joitain mahdollisuuksia on vielä hyödyntämättä. Ota meihin yhteyttä, niin lisätään tehot täysille!");
+					else
+						$("#question").html("Vielä et hyödynnä verkkopalveluita täysillä, mutta ei hätää. Ota meihin yhteyttä, niin laitetaan asiat kuntoon!");
+				}
+			}
+		</script>
 	</body>
 </html>

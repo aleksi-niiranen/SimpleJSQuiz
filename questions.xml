@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<questions>
+	<question>
+		<title>Onko yritykselläsi nettisivut?</title>
+		<option_one>
+			<answer>Kyllä</answer>
+			<value>1</value>
+		</option_one>
+		<option_two>
+			<answer>Ei, tai ne ovat yli viisi vuotta vanhat</answer>
+			<value>0</value>
+		</option_two>
+		<option_three>
+			<answer></answer>
+			<value></value>
+		</option_three>
+		<option_four>
+			<answer></answer>
+			<value></value>
+		</option_four>
+	</question>
+	<question>
+		<title>Kuinka usein yrityksesi nettisivuja päivitetään?</title>
+		<option_one>
+			<answer>Viikoittain</answer>
+			<value>2</value>
+		</option_one>
+		<option_two>
+			<answer>Kuukausittain</answer>
+			<value>1</value>
+		</option_two>
+		<option_three>
+			<answer>Harvemmin</answer>
+			<value>0</value>
+		</option_three>
+		<option_four>
+			<answer></answer>
+			<value></value>
+		</option_four>
+	</question>
+	<question>
+		<title>Onko yritykselläsi käytössä verkkokauppaa tai verkkoajanvaraussysteemiä?</title>
+		<option_one>
+			<answer>Kyllä</answer>
+			<value>1</value>
+		</option_one>
+		<option_two>
+			<answer>Ei</answer>
+			<value>0</value>
+		</option_two>
+		<option_three>
+			<answer></answer>
+			<value></value>
+		</option_three>
+		<option_four>
+			<answer></answer>
+			<value></value>
+		</option_four>
+	</question>
+	<question>
+		<title>Onko yritykselläsi intra- tai ekstranettiä eli suljettua verkkopalvelua, joka on tarkoitettu ainoastaan yrityksen työntekijöille tai sidosryhmille?</title>
+		<option_one>
+			<answer>Kyllä, molemmat</answer>
+			<value>2</value>
+		</option_one>
+		<option_two>
+			<answer>Kyllä, intranet</answer>
+			<value>1</value>
+		</option_two>
+		<option_three>
+			<answer>Kyllä, ekstranet</answer>
+			<value>1</value>
+		</option_three>
+		<option_four>
+			<answer>Ei kumpaakaan</answer>
+			<value>0</value>
+		</option_four>
+	</question>
+	<question>
+		<title>Ovatko nettisivut ja järjestelmät kuten taloushallinto yhteydessä toisiinsa?</title>
+		<option_one>
+			<answer>Kyllä</answer>
+			<value>1</value>
+		</option_one>
+		<option_two>
+			<answer>Ei</answer>
+			<value>0</value>
+		</option_two>
+		<option_three>
+			<answer></answer>
+			<value></value>
+		</option_three>
+		<option_four>
+			<answer></answer>
+			<value></value>
+		</option_four>
+	</question>
+</questions>

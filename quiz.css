@@ -6,30 +6,19 @@ div#main {
 	width: 520px;
 	height: 265px;
 	background:url('bg.png') top left no-repeat;
-	padding: 2px;
-	border: 1px solid black;
+	padding: 1px;
 }
 
 div#content {
-	float: left;
-}
-
-div#images {
 	position: absolute;
-	left: 350px;
+	width: 378px;
 }
 
-div#startProduct {
-	float: right;
-	margin-left: 20px;
-}
-
-div#startService {
-	float: left;
-}
-
-p.icons {
-	margin-left: 20px;
+div#answers {
+	position: absolute;
+	left: 384px;
+	width: 140px;
+	margin-top: 15px;
 }
 
 .hidden {
