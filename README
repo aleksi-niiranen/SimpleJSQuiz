@@ -1,2 +1,2 @@
-Simple quiz site made with HTML, JavaScript(jQuery) and AJAX.
+Simple quiz site made with HTML and JavaScript.
 The page is designed as a Facebook iFrame app, therefore the width of the main container is set to 520px.
