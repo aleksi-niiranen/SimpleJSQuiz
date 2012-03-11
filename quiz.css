@@ -1,24 +1,24 @@
 body {
-	font-family: verdana;
+	font-family: Helvetica;
 }
 
 div#main {
 	width: 520px;
-	height: 265px;
-	background:url('bg.png') top left no-repeat;
-	padding: 1px;
+	height: 250px;
+	background-color: #e0dede;
+	padding: 0 5px;
 }
 
 div#content {
-	position: absolute;
-	width: 378px;
 }
 
 div#answers {
-	position: absolute;
-	left: 384px;
+	float: right;
 	width: 140px;
-	margin-top: 15px;
+}
+
+a:link, a:visited {
+	color: #4052db;
 }
 
 .hidden {

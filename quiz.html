@@ -9,20 +9,20 @@
 	<body>
 		<div id="main">
 			<div id="content">
-			<p id="question">Quiz starting screen</p>
+			<h3 id="question">Quiz starting screen</h3>
 			</div>
 			<div id="answers">
 				<a id="answer1" href="#">Vastaus 1</a><br/>
 				<a id="answer2" href="#">Vastaus 2</a><br/>
 				<a id="answer3" href="#">Vastaus 3</a><br/>
-				<a id="answer4" href="#">Vastaus 4</a>
+				<a id="answer4" href="#">Vastaus 4</a><br/>
 			</div>
 		</div>
 <script type="text/javascript" src="quiz.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-					loadQuiz('questionsForServices.xml');
+					loadQuiz('questions.xml');
 					renderContent();
 			});
 			function renderContent() {
