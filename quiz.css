@@ -1,24 +1,40 @@
 body {
 	font-family: Helvetica;
+	color: #00acfb;
+	font-size: 1em;
+}
+
+h3 {
+	font-size: 1.4em;
 }
 
 div#main {
-	width: 520px;
-	height: 250px;
-	background-color: #e0dede;
+	width: 500px;
+	height: 230px;
+	background-image: url("gradient.png");
+	background-repeat: no-repeat;
 	padding: 0 5px;
-}
-
-div#content {
 }
 
 div#answers {
 	float: right;
-	width: 140px;
+	width: 180px;
 }
 
 a:link, a:visited {
 	color: #4052db;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+ol li {
+	list-style: none;
+}
+
+#fact {
+	font-size: 1.1em;
 }
 
 .hidden {

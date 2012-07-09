@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quiz</title>
+		<link rel="stylesheet" type="text/css" href="quiz.css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	</head>
+	<body>
+		<div id="main">
+		</div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="quiz.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#answer1_link").bind('click', {fact: 1}, renderResult)
+				$("#answer2_link").bind('click', {fact: 2}, renderResult)
+				$("#answer3_link").bind('click', {fact: 3}, renderResult)
+				$("#answer4_link").bind('click', {fact: 4}, renderResult)
+				$("#main").css("background-image", "url(gradient.png)")
+			});
+
+			function renderResult(arg) {
+				var fact = arg.data.fact
+				if (fact == 1)
+					$("#question").html("Some message one")
+				else if (fact == 2)
+					$("#question").html("Some message two")
+				else if (fact == 3)
+					$("#question").html("Some message three")
+				else
+					$("#question").html("Some message four")
+				$("#answers").addClass("hidden")
+				$("#main").css("background-image", "")
+			}
+		</script>
+	</body>
+</html>

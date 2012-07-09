@@ -1,98 +1,123 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <questions>
 	<question>
-		<title>Onko yritykselläsi nettisivut?</title>
-		<option_one>
-			<answer>Kyllä</answer>
+		<title>Question one?</title>
+		<bgimage>gradient.png</bgimage>
+		<option_1>
+			<answer>Yes</answer>
 			<value>1</value>
-		</option_one>
-		<option_two>
-			<answer>Ei, tai ne ovat yli viisi vuotta vanhat</answer>
+			<fact>A cold hard fact</fact>
+		</option_1>
+		<option_2>
+			<answer>No</answer>
 			<value>0</value>
-		</option_two>
-		<option_three>
+			<fact>A colder and harder fact</fact>
+		</option_2>
+		<option_3>
 			<answer></answer>
 			<value></value>
-		</option_three>
-		<option_four>
+			<fact></fact>
+		</option_3>
+		<option_4>
 			<answer></answer>
 			<value></value>
-		</option_four>
+			<fact></fact>
+		</option_4>
 	</question>
 	<question>
-		<title>Kuinka usein yrityksesi nettisivuja päivitetään?</title>
-		<option_one>
-			<answer>Viikoittain</answer>
+		<title>Question two?</title>
+		<bgimage>gradient.png</bgimage>
+		<option_1>
+			<answer>Weekly</answer>
 			<value>2</value>
-		</option_one>
-		<option_two>
-			<answer>Kuukausittain</answer>
+			<fact>A cold hard fact</fact>
+		</option_1>
+		<option_2>
+			<answer>Monthly</answer>
 			<value>1</value>
-		</option_two>
-		<option_three>
-			<answer>Harvemmin</answer>
+			<fact>A colder and harder fact</fact>
+		</option_2>
+		<option_3>
+			<answer>Less frequently</answer>
 			<value>0</value>
-		</option_three>
-		<option_four>
+			<fact>An ice cold and rock hard fact</fact>
+		</option_3>
+		<option_4>
 			<answer></answer>
 			<value></value>
-		</option_four>
+			<fact></fact>
+		</option_4>
 	</question>
 	<question>
-		<title>Onko yritykselläsi käytössä verkkokauppaa tai verkkoajanvaraussysteemiä?</title>
-		<option_one>
-			<answer>Kyllä</answer>
-			<value>1</value>
-		</option_one>
-		<option_two>
-			<answer>Ei</answer>
-			<value>0</value>
-		</option_two>
-		<option_three>
-			<answer></answer>
-			<value></value>
-		</option_three>
-		<option_four>
-			<answer></answer>
-			<value></value>
-		</option_four>
-	</question>
-	<question>
-		<title>Onko yritykselläsi intra- tai ekstranettiä eli suljettua verkkopalvelua, joka on tarkoitettu ainoastaan yrityksen työntekijöille tai sidosryhmille?</title>
-		<option_one>
-			<answer>Kyllä, molemmat</answer>
+		<title>Question three?</title>
+		<bgimage>gradient.png</bgimage>
+		<option_1>
+			<answer>Yes</answer>
 			<value>2</value>
-		</option_one>
-		<option_two>
-			<answer>Kyllä, intranet</answer>
+			<fact>A cold hard fact</fact>
+		</option_1>
+		<option_2>
+			<answer>No</answer>
 			<value>1</value>
-		</option_two>
-		<option_three>
-			<answer>Kyllä, ekstranet</answer>
-			<value>1</value>
-		</option_three>
-		<option_four>
-			<answer>Ei kumpaakaan</answer>
-			<value>0</value>
-		</option_four>
+			<fact>A colder and harder fact</fact>
+		</option_2>
+		<option_3>
+			<answer></answer>
+			<value></value>
+			<fact></fact>
+		</option_3>
+		<option_4>
+			<answer></answer>
+			<value></value>
+			<fact></fact>
+		</option_4>
 	</question>
 	<question>
-		<title>Ovatko nettisivut ja järjestelmät kuten taloushallinto yhteydessä toisiinsa?</title>
-		<option_one>
-			<answer>Kyllä</answer>
+		<title>Question four?</title>
+		<bgimage>gradient.png</bgimage>
+		<option_1>
+			<answer>Both</answer>
+			<value>2</value>
+			<fact></fact>
+		</option_1>
+		<option_2>
+			<answer>One of them</answer>
 			<value>1</value>
-		</option_one>
-		<option_two>
-			<answer>Ei</answer>
+			<fact></fact>
+		</option_2>
+		<option_3>
+			<answer>Neither</answer>
 			<value>0</value>
-		</option_two>
-		<option_three>
+			<fact></fact>
+		</option_3>
+		<option_4>
 			<answer></answer>
 			<value></value>
-		</option_three>
-		<option_four>
-			<answer></answer>
-			<value></value>
-		</option_four>
+			<fact></fact>
+		</option_4>
+	</question>
+	<question>
+		<title>Question five?</title>
+		<bgimage>gradient.png</bgimage>
+		<option_1>
+			<answer>Yes</answer>
+			<value>2</value>
+			<fact>A cold hard fact</fact>
+		</option_1>
+		<option_2>
+			<answer>No</answer>
+			<value>1</value>
+			<fact>A colder and harder fact</fact>
+		</option_2>
+		<option_3>
+			<answer>Maybe</answer>
+			<value>0</value>
+			<fact>An ice cold and rock hard fact</fact>
+		</option_3>
+		<option_4>
+			<answer>In your dreams</answer>
+			<value>3</value>
+			<fact>One hell of a fact</fact>
+		</option_4>
 	</question>
 </questions>
